@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWatchApp</string>
+    <string name="heartRateText">Heart Rate : N/A</string>
+</resources>
