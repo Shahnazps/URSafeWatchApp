@@ -99,7 +99,9 @@ public class HeartRateWearService extends Service implements SensorEventListener
     public void onDestroy() {
         if (sensorManager != null)
             sensorManager.unregisterListener(this);
-        heartRateScheduler.shutdown();
+        if (heartRateScheduler != null) {
+            heartRateScheduler.shutdown();
+        }
 
         super.onDestroy();
     }
