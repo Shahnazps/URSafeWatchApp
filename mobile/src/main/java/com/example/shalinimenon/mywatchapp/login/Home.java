@@ -38,6 +38,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Home.this,Main2Activity.class);
+                intent.putExtra("selectedFromList", "8137871193");
                 startActivity(intent);
             }
         });
